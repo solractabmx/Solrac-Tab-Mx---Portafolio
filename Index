@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solrac Tab Mx | Servicios en Valladolid</title>
+    <style>
+        /* =========================================
+           CSS INTEGRADO - SOLRAC TAB MX
+           ========================================= */
+        :root {
+            --primary: #3498db;    /* Azul Principal */
+            --secondary: #2c3e50;  /* Azul Oscuro */
+            --bg: #f4f7f6;         /* Fondo Gris Claro */
+            --white: #ffffff;
+            --text: #333333;
+            --shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+
+        /* HEADER Y NAVEGACIÓN */
+        header { 
+            background: var(--secondary); 
+            color: var(--white); 
+            padding: 3rem 1rem; 
+            text-align: center; 
+        }
+
+        .logo-main { 
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            border: 3px solid var(--primary); 
+            background: white;
+            margin-bottom: 1rem;
+        }
+
+        nav { margin-top: 1.5rem; }
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        nav a:hover { color: var(--primary); }
+
+        /* SECCIONES */
+        section { 
+            max-width: 1000px; 
+            margin: 2.5rem auto; 
+            padding: 2rem; 
+            background: var(--white); 
+            border-radius: 15px; 
+            box-shadow: var(--shadow); 
+        }
+
+        h2 { 
+            color: var(--secondary); 
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* GRID DE SERVICIOS */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card-service {
+            border: 1px solid #eee;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-service:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 135px;
+            object-fit: contain;
+            background: #fcfcfc;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .card-content h3 { margin: 0 0 10px; color: var(--secondary); }
+        .card-content p { font-size: 0.9rem; color: #666; margin-bottom: 20px; flex-grow: 1; }
+
+        /* GRID DE HABILIDADES */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-item {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .skill-item:hover {
+            border-color: var(--primary);
+            background: #f9fcff;
+        }
+
+        .skill-icon { font-size: 2rem; display: block; margin-bottom: 10px; }
+        .skill-name { font-weight: bold; color: var(--secondary); margin: 0; }
+        .skill-detail { font-size: 0.7rem; color: var(--primary); font-weight: bold; text-transform: uppercase; }
+
+        /* BOTONES Y CONTACTO */
+        .btn {
+            display: block;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-whatsapp { background: #25d366; color: white; }
+
+        .social-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
+        .social-item { 
+            background: var(--secondary); color: white; 
+            padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 0.8rem;
+        }
+
+        /* FOOTER */
+        footer { background: var(--secondary); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            section { margin: 1rem; padding: 1.5rem; }
+            nav a { display: inline-block; margin: 5px 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK-f7ISGlp27PywlhjepSDwGnWsEQLy-Ceg5VSW1my5_OoByUP70bOx6lyW5tRw3nCQFRjO1c9ySLHMEgEJ5JIvsUdO1TiHYsfaqNZp9Ccyziv1k2EK-EPaVIxr-oIPnfYBN7R6PRoLdBC0ZLzTxhM-EzERR5Mz3xe_pTYN-3sslOvKb056C9O8LHPhVbl/s200/logo.png" alt="Solrac Tab Mx" class="logo-main">
+        <h1>Solrac Tab Mx</h1>
+        <p>Soluciones Técnicas | Valladolid, Yucatán</p>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="servicios">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2>Mis Servicios</h2>
+                <p>Experiencia y calidad en cada trabajo realizado.</p>
+            </div>
+            
+            <div class="services-grid">
+                <article class="card-service">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSObT-4L3-WrS6jox3m3moE5rkk1IaijkGqD_yErnWWBTemBA7fJg7ZmfYCMLzjxkV7gCa6iMGBO_t9hFtY0ZE9wI7CnokJmLjcez7XxX_v7lYiqaDau5_jeVwxSGaouAdFQyE7SqFU4yro_RK51YBhs5sCUGpPZicFuQAcT2X218V4OLB9cj00LB8FKAQ/s8160/electricidad.jpg" alt="Electricidad" class="card-img">
+                    <div class="card-content">
+                        <h3>Electricidad</h3>
+                        <p>Instalaciones y mantenimiento en rangos de 100V a 230V con seguridad garantizada.</p>
+                        <a href="https://wa.me/529851222435?text=Hola,%20cotización%20eléctrica" class="btn btn-primary">Cotizar Servicio</a>
+                    </div>
+                </article>
+
+                <article class="card-service">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfQgereqt_Bmt7sbgRqZelospN1XV4qFoxsPRhzcH3aaT14pXncLuu73exzQL6__uVvuy5wSe3xyNrVJrXswdL0_ghp_9ssi6lnVuRr8ZRYfm-8ohlt3Ta3hwEpF6ox9zSQGQQRCvjlYaA74RpPeOkjJQSrQpgYjhiRkc_lVRLvQFLQAwgwODMgcpxDW5L/s8160/aireacondicionado.jpg" alt="Aire Acondicionado" class="card-img">
+                    <div class="card-body card-content">
+                        <h3>Aires Acondicionados</h3>
+                        <p>Mantenimiento preventivo y correctivo para asegurar la frescura de tu hogar.</p>
+                        <a href="https://wa.me/529851222435?text=Hola,%20mantenimiento%20de%20aire" class="btn btn-primary">Solicitar</a>
+                    </div>
+                </article>
+
+                <article class="card-service">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUlE-eflMIuWzBRtMcHmlsWXTwiMvFruT5RdOn2L2c9RbSkyXjiKBEyZpHVudlNmYyoY3jyYJYA3LPIs0Pp5kHykSrrgG_WIDAUSjP3-mnkh87m4SoLq7lzv6B-ON27B-t7h004atHoRYoc_5wgoWjdGshUqutSAeBKhepRkEmPLa5N0UyRpina1-N_El/s8160/mesero.jpg" alt="Mesero" class="card-img">
+                    <div class="card-body card-content">
+                        <h3>Servicio de Mesero</h3>
+                        <p>Atención de alta calidad para eventos familiares y celebraciones especiales.</p>
+                        <a href="https://wa.me/529851222435?text=Hola,%20servicio%20de%20mesero" class="btn btn-primary">Contratar</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2>Habilidades Especializadas</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="skill-icon">⚡</span>
+                    <p class="skill-name">Electricidad</p>
+                    <span class="skill-detail">100V - 230V</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-icon">❄️</span>
+                    <p class="skill-name">Climatización</p>
+                    <span class="skill-detail">Mantenimiento</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-icon">🍽️</span>
+                    <p class="skill-name">Servicio VIP</p>
+                    <span class="skill-detail">Eventos</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-icon">👨‍💻</span>
+                    <p class="skill-name">Web Básico</p>
+                    <span class="skill-detail">HTML / CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div style="text-align: center;">
+                <h2>Contacto</h2>
+                <p>¿Tienes un proyecto en mente? ¡Escríbeme!</p>
+                <div style="margin: 20px 0;">
+                    <a href="https://wa.me/529851222435" class="btn btn-whatsapp" style="max-width: 300px; margin: 0 auto;">
+                        Enviar WhatsApp Directo
+                    </a>
+                </div>
+                <p>Ubicación: <strong>Valladolid, Yucatán.</strong></p>
+                <div class="social-links">
+                    <a href="https://youtube.com/@solractabmx" class="social-item" target="_blank">YouTube</a>
+                    <a href="https://instagram.com/solractabmx" class="social-item" target="_blank">Instagram</a>
+                    <a href="https://facebook.com/solractabmx" class="social-item" target="_blank">Facebook</a>
+                </div>
+                <p style="font-size: 0.8rem; color: #999; margin-top: 20px;">@solractabmx</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Solrac Tab Mx. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
